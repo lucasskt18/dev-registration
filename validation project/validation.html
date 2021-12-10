@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev registration</title>
+    <link rel="stylesheet" href="validation.css">
+</head>
+<body>
+    <div id="main-container">
+       <h1>Register to access the system</h1> 
+      <form id="register-form">
+       <div class="full-box">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Enter your e-mail" data-min-lenght=3>
+       </div>
+       <div class="half-box spacing">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+       </div>
+       <div class="half-box">
+        <label for="name">Surname</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Enter your surname">
+       </div>
+       <div class="half-box spacing">
+        <label for="password">Password</label>
+        <input type="password" name="passwprd" id="password" placeholder="Enter your password">
+       </div>
+       <div class="half-box">
+        <label for="passconfirmation">Password</label>
+        <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirm your password">
+       </div>
+       <div class="full-box">
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement" id="agreement-label">I have read and accept the <a href="#">terms of use.</a></label>
+       </div>
+       <div class="full-box">
+        <input type="submit" id="btn-submite" value="register">
+       </div>
+      </form>
+    </div>
+    <p class="error-validation template"></p>
+      <script src="validation.js"></script>
+</body>
+</html>
